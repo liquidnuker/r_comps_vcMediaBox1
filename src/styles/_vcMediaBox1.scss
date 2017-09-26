@@ -1,0 +1,177 @@
+// vcmediabox101
+// ==================================================/
+@mixin vcmediabox101_theme() {
+  .vcmediabox101 {
+    background-color: #141416;
+    color: #d5d5d5;
+
+    .vcmediabox101_img-holder {
+      border: 1px solid #000;
+    }
+
+    .vcmediabox101_media-right {
+      background-color: #1c1d22;
+    }
+
+    .vcmediabox101_heading {
+      background-color: #343437;
+      color: #fff;
+    }
+
+    .vcmediabox101_extras {
+      background-color: #2c2d32;
+
+      span {
+        color: #000;
+      }
+    }
+  }
+}
+@include vcmediabox101_theme();
+
+.vcmediabox101 {
+  .vcmediabox101_img-holder {
+    @extend %text--center;
+    @extend %padd--4;
+    
+    > img {
+      @extend %img--responsive;
+    }
+  }
+
+  .vcmediabox101_heading {
+    @extend %padd--4;
+  }
+
+  .vcmediabox101_media-right {
+    @extend %padd--4;
+
+    p {
+      @extend %padd--4;
+    }
+  }
+
+  .vcmediabox101_extras {
+    @extend %padd--4;
+    margin-top: 4px;
+
+    span {
+      float: right;
+      margin-left: 4px;
+
+      &:hover > .vcmediabox101_btn_svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  .vcmediabox101_btn_svg {
+    @extend %display--inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .vcmediabox101 {
+    .vcmediabox101_media-left {
+      width: 30%;
+      float: left;
+    }
+
+    .vcmediabox101_media-right {
+      width: 70%;
+      float: left;
+    }
+  }
+}
+
+// vcmediabox102       
+// ==================================================/
+@mixin vcmediabox102_theme() {
+  .vcmediabox102 {
+    background-color: #141416;
+    color: #d5d5d5;
+
+    .vcmediabox102_heading {
+      background-color: #343437;
+      color: #fff; 
+    }
+
+    .vcmediabox102_extras {
+      background-color: #2c2d32;
+    }
+
+    span {
+      color: #000;
+
+      &:hover > .vcmediabox102_btn_svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+@include vcmediabox102_theme();
+
+.vcmediabox102 {
+  .vcmediabox102_img-holder {
+    @extend %text--center;
+
+    > img {
+      @extend %img--responsive;
+    }
+  }
+
+  .vcmediabox102_heading {
+    @extend %padd--4;
+  }
+
+  .vcmediabox102_media-right {
+    @extend %padd--4;
+
+    p {
+      @extend %padd--4;
+    }
+
+    span {      
+      margin-top: 6px;
+    }
+  }
+
+  .vcmediabox102_extras {
+    @extend %padd--4;
+
+    p {
+      @extend %display--inline-block;
+    }
+
+    span {      
+      float: right;
+      margin-right: 6px;
+    }
+  }
+
+  .vcmediabox102_btn_svg {
+    @extend %display--inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+  }
+}  
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .vcmediabox102 {
+    .vcmediabox102_media-left {
+      width: 30%;
+      float: left;
+    }
+
+    .vcmediabox102_media-right {
+      width: 70%;
+      float: left;
+    }
+  }
+}
