@@ -13,7 +13,15 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
     staticClass: "col-sm-3 col-md-3 col-lg-3"
   }, [_vm._v("39")]), _vm._v(" "), _c('div', {
     staticClass: "col-sm-9 col-md-9 col-lg-9"
-  }, [_c('vcMediaBox101')], 1)])])
+  }, [_c('vcMediaBox101')], 1)]), _vm._v(" "), _c('h2', {
+    staticClass: "item-id"
+  }, [_vm._v("vcMediaBox102")]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-sm-3 col-md-3 col-lg-3"
+  }, [_vm._v("39")]), _vm._v(" "), _c('div', {
+    staticClass: "col-sm-9 col-md-9 col-lg-9"
+  }, [_c('vcMediaBox102')], 1)])])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -96,9 +104,22 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var vcMediaBox101 = function vcMediaBox101() {
-  return __webpack_require__.e/* import() */(1).then(__webpack_require__.bind(null, 9));
+  return __webpack_require__.e/* import() */(4).then(__webpack_require__.bind(null, 9));
+};
+var vcMediaBox102 = function vcMediaBox102() {
+  return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, 14));
 };
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
@@ -106,7 +127,8 @@ var vcMediaBox101 = function vcMediaBox101() {
   },
 
   components: {
-    vcMediaBox101: vcMediaBox101
+    vcMediaBox101: vcMediaBox101,
+    vcMediaBox102: vcMediaBox102
   },
   mounted: function mounted() {
     // console.log("Home.vue mounted");

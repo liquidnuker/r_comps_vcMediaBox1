@@ -821,6 +821,10 @@ input [type="button"],
     .vcmediabox101 .vcmediabox101_extras span {
       color: #000; }
 
+.vcmediabox101 .vcmediabox101_media-right p {
+  line-height: 114%;
+  /* most browsers is about 110% to 120% */ }
+
 .vcmediabox101 .vcmediabox101_extras {
   margin-top: 4px; }
   .vcmediabox101 .vcmediabox101_extras span {
@@ -854,6 +858,9 @@ input [type="button"],
     color: #000; }
     .vcmediabox102 span:hover > .vcmediabox102_btn_svg {
       fill: #fff; }
+
+.vcmediabox102 .vcmediabox102_media-right p {
+  line-height: 114%; }
 
 .vcmediabox102 .vcmediabox102_media-right span {
   margin-top: 6px; }

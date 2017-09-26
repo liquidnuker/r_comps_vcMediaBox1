@@ -48,6 +48,7 @@
 
     p {
       @extend %padd--4;
+      line-height: 114%; /* most browsers is about 110% to 120% */
     }
   }
 
@@ -133,6 +134,7 @@
 
     p {
       @extend %padd--4;
+      line-height: 114%;
     }
 
     span {      
